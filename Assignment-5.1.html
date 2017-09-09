@@ -1,0 +1,24 @@
+<html><!-- Head of the Root -->
+  <head><!-- child sub root of the html tag as head tag  -->
+    <!-- it is a title tag -->
+    <title>Area of a circle</title>
+  </head>
+  <!-- it is a body tag -->
+  <body>
+    <!-- it is a script tag -->
+    <script language="JavaScript">
+          function Area()
+          {
+          var radius =document.input.Radius.value;
+          document.write("<P>The area of the circle is " + (radius * radius * Math.PI) + "</p>");
+          }
+      </script>
+      
+      <form name=input><!-- it is a form type tag -->
+          Enter the radius of circle:
+         <input type="text" name="Radius" size=10>
+         <br><!-- it is a line break tag -->
+         <input type="button" value="Calculate" onClick='Area();'>  
+      </form>
+  </body>
+</html>
